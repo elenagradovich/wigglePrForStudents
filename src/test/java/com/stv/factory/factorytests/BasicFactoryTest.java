@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.stv.framework.core.lib.WigglePageURLs.START_URL;
 
-public class BasicFactoryTest {
+public abstract class BasicFactoryTest {
     public static WebDriver getDriver() {
         return Driver.getDriver();
     }
@@ -17,15 +17,13 @@ public class BasicFactoryTest {
     @BeforeClass(description = "Start browser")
     public void setUp() {
         WebDriver driver = getDriver();
-
         driver.get(START_URL);
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-
     }
 
     @AfterClass
     public void afterClass() throws Exception {
-        //getDriver().quit();
+        getDriver().quit();
     }
 }

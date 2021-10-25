@@ -3,7 +3,7 @@ Feature: Sequential following through the links on the site
   Scenario: 01. Check active navigation tab
     Given Main page is loaded
     When Find active navigation link
-    Then Check if the active navigation tab is 'Outlet'
+    Then Check if the active navigation tab is "Outlet"
 
 #  Scenario: 02. Open the login page
 #    When Click on element having id "accountLink"

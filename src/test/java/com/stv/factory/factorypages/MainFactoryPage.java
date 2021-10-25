@@ -28,16 +28,7 @@ public class MainFactoryPage extends FactoryPage {
         trustButton.click();
     }
 
-    public String activeLinkName = "";
-
-    public void getActiveNavLinkAddress () {
-        activeLinkName =  activeNavLink.getText();
+    public String getActiveLinkName() {
+        return activeNavLink.getText();
     }
-
-    public boolean isActiveLinkName (String name) {
-        System.out.println("Name of tab:");
-        System.out.println(name.toLowerCase() == activeLinkName.toLowerCase());
-        return name.toLowerCase() == activeLinkName.toLowerCase();
-    }
-
 }
