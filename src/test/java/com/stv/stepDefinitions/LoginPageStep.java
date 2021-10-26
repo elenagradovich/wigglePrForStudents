@@ -1,8 +1,11 @@
 package com.stv.stepDefinitions;
 
 import io.cucumber.java.en.*;
+import static com.stv.framework.core.lib.WigglePageURLs.LOGIN_URL;
 
 public class LoginPageStep {
+
+
 //    //Scenario: 03. Get warning message on Login page
 //    @Given("Login page is loaded")
 //    public void login_page_is_loaded() {

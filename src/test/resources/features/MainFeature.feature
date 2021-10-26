@@ -1,14 +1,11 @@
 Feature: Sequential following through the links on the site
 
-  Scenario: 01. Check active navigation tab
+  Scenario: 01. Open Main page and follow to Login page
     Given Main page is loaded
     When Find active navigation link
     Then Check if the active navigation tab is "Outlet"
-
-#  Scenario: 02. Open the login page
-#    When Click on element having id "accountLink"
-#    And Check if loaded page is Login page
-#    Then Login page is loaded
+    When Click on login link
+    Then Login page is loaded
 
 #  Scenario: 03. Get warning message on Login page
 #    Given Login page is loaded
