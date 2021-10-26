@@ -24,7 +24,9 @@ public class MainFactoryPage extends FactoryPage {
         accountLink.click();
     }
 
-    public void clickOnTrustButton(){ trustButton.click(); }
+    public void clickOnTrustButton(){
+        trustButton.click();
+    }
 
     public String getActiveLinkName() {
         return activeNavLink.getText();

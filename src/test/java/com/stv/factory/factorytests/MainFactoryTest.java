@@ -1,6 +1,6 @@
 package com.stv.factory.factorytests;
 
-import com.stv.factory.factorypages.LoginPage;
+import com.stv.factory.factorypages.LoginFactoryPage;
 import com.stv.factory.factorypages.MainFactoryPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,6 +18,6 @@ public class MainFactoryTest extends BasicFactoryTest {
     public void assertLoginPageOpened() {
         mainFactoryPage.clickOnTrustButton();
         mainFactoryPage.clickOnAccountLink();
-        Assert.assertEquals(new LoginPage().isLoginContainerDisplayed(), true, "Login page isn't loaded properly");
+        Assert.assertEquals(new LoginFactoryPage().isLoginContainerDisplayed(), true, "Login page isn't loaded properly");
     }
 }
